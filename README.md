@@ -6,15 +6,15 @@ A C++ console application for interacting with pcProx card readers. Tested and b
 
 1. Install Build Tools
 
-```bash
-sudo apt-get install build-essential
-```
+    ```bash
+    sudo apt-get install build-essential
+    ```
 
 2. Install libudev0 module
 
-```bash
-sudo apt-get install libudev1:i386 && sudo ln -sf /lib/x86_64-linux-gnu/libudev.so.1 /lib/x86_64-linux-gnu/libudev.so.0
-```
+    ```bash
+    sudo apt-get install libudev1:i386 && sudo ln -sf /lib/x86_64-linux-gnu/libudev.so.1 /lib/x86_64-linux-gnu/libudev.so.0
+    ```
 
 3. Copy `libhidapi-hidraw.so.0.0.0` to the `lib\hidapi` folder
 
