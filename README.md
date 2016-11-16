@@ -1,6 +1,6 @@
 # PcProx Console
 
-A C++ console application for interacting with pcProx card readers. Tested and built on Ubunut 16.04 64-bit.
+A C++ console application for interacting with pcProx card readers. Tested and built on Ubuntu 16.04 64-bit.
 
 ### Prerequisites
 
@@ -25,3 +25,9 @@ A C++ console application for interacting with pcProx card readers. Tested and b
 ```bash
 sudo ./run.sh
 ```
+
+### Resources
+
+**C++ Core Guidelines**
+
+http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#main
