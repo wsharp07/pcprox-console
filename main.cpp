@@ -1,31 +1,15 @@
 #include <stdio.h>
-#include <syslog.h>
 #include <signal.h>
 #include <cstdlib>
 #include <string>
 #include "lib/pcProxAPI/pcProxAPI.h"
+#include "syslogger.h"
 
 using namespace std;
 
 volatile sig_atomic_t stop;
 void inthand(int signum) {
     stop = 1;
-}
-
-void start_logging(const char* filename)
-{
-    setlogmask (LOG_UPTO (LOG_NOTICE));
-    openlog (filename, LOG_CONS | LOG_PID | LOG_NDELAY, LOG_LOCAL1);
-}
-
-void stop_logging()
-{
-    closelog();
-}
-
-void log_info(const char* message)
-{
-    syslog(LOG_NOTICE, "%s", message);
 }
 
 void delay(int ms)
@@ -90,10 +74,11 @@ void try_get_card_id()
 }
 
 int main(int argc, char *argv[]) {
-    start_logging("pcprox-console");
+    Syslogger logger;
+    logger.start_logging("pcprox-console");
     signal(SIGINT, inthand);
 
-    log_info("Starting the console");
+    logger.info("Starting the console with class");
 
     printf("\n###\n");
     printf("Starting the console\n");
@@ -123,6 +108,6 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    stop_logging();
+    logger.stop_logging();
     return(EXIT_SUCCESS);
 }
