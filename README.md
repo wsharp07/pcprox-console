@@ -21,10 +21,8 @@ A C++ console application for interacting with pcProx card readers. Tested and b
     ```bash
     sudo apt-get install libhidapi-dev libhidapi-hidraw0 libhidapi-libusb0
     ```
-    
-4. Copy `libhidapi-hidraw.so.0.0.0` to the `lib\hidapi` folder
 
-5. See the README file in the `lib/pcProxAPI` folder for the files you will need to copy there from the pcProx SDK. More information on the SDK can be found here: https://www.rfideas.com/products/sdk/universal-enroll-sdk
+4. See the README file in the `lib/pcProxAPI` folder for the files you will need to copy there from the pcProx SDK. More information on the SDK can be found here: https://www.rfideas.com/products/sdk/universal-enroll-sdk
 
 ### Running the app
 
