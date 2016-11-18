@@ -1,7 +1,7 @@
 #include "string"
 #include <stdio.h>
-#include "lib/pcProxAPI/pcProxAPI.h"
-#include "pcprox.h"
+#include "../lib/pcProxAPI/pcProxAPI.h"
+#include "../include/pcprox.h"
 
 using namespace std;
 

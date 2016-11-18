@@ -1,4 +1,4 @@
-#include "syslogger.h"
+#include "../include/syslogger.h"
 #include "syslog.h"
 
 void Syslogger::start_logging(const char* filename)
