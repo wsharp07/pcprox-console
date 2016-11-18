@@ -2,9 +2,9 @@
 #include <signal.h>
 #include <cstdlib>
 #include <string>
-#include "lib/pcProxAPI/pcProxAPI.h"
-#include "pcprox.h"
-#include "syslogger.h"
+#include "../lib/pcProxAPI/pcProxAPI.h"
+#include "../include/pcprox.h"
+#include "../include/syslogger.h"
 
 using namespace std;
 
