@@ -18,34 +18,43 @@ void delay(int ms)
     usleep(ms*1000);
 }
 
-int main(int argc, char *argv[]) {
-    Syslogger logger;
-    logger.start_logging("pcprox-console");
-    signal(SIGINT, inthand);
-
-    logger.info("Starting the console with class");
-
+void write_greeting()
+{
     printf("\n###\n");
     printf("Starting the console\n");
     printf("Press CTRL+C to exit\n");
     printf("###\n\n");
+}
 
-    bool is_connected = false;
+int main(int argc, char *argv[]) {
+    // variables
+    Syslogger logger;
     Pcprox reader;
+    bool is_connected = false;
+
+    signal(SIGINT, inthand);
+
+    logger.start_logging("pcprox-console");
+    logger.info("Starting the console with class");
+
+    write_greeting();
 
     while (!stop)
     {
         if (is_connected)
         {
             string card_id = reader.get_card_id();
-            if (card_id.empty()) continue;
 
-            printf("Card Read: %s\n", card_id.c_str());
-
-            if(reader.get_last_lib_err() > 0)
+            // There is card data
+            if (card_id.empty() == false)
             {
-                printf("Lost reader connection\n");
-                is_connected = false;
+                printf("Card Read: %s\n", card_id.c_str());
+
+                if(reader.get_last_lib_err() > 0)
+                {
+                    printf("Lost reader connection\n");
+                    is_connected = false;
+                }
             }
 
             delay(250);
