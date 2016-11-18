@@ -3,5 +3,5 @@ project(pcprox-console)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp syslogger.cpp syslogger.h)
+set(SOURCE_FILES main.cpp syslogger.cpp syslogger.h pcprox.cpp pcprox.h)
 add_executable(pcprox-console ${SOURCE_FILES})
