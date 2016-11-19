@@ -2,12 +2,12 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/pcprox.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/syslogger.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pcprox.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/pcprox.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/syslogger.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pcprox.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/syslogger.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/syslogger.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

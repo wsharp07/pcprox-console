@@ -2,6 +2,7 @@
 build
 .DS_Store
 pcProxAPI.h
+bin
 
 # Prerequisites
 *.d
@@ -79,3 +80,12 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+# CMake
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
