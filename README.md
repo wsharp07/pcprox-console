@@ -4,25 +4,13 @@ A C++ console application for interacting with pcProx card readers. Tested and b
 
 ### Prerequisites
 
-1. Install Build Tools
+1. Install Build Tools and libhidapi modules
 
     ```bash
-    sudo apt-get install build-essential
+    sudo apt-get install build-essential libhidapi-dev libhidapi-hidraw0 libhidapi-libusb0
     ```
 
-2. Install libudev0 module
-
-    ```bash
-    sudo apt-get install libudev1:i386 && sudo ln -sf /lib/x86_64-linux-gnu/libudev.so.1 /lib/x86_64-linux-gnu/libudev.so.0
-    ```
-
-3. Install libhidapi modules
-
-    ```bash
-    sudo apt-get install libhidapi-dev libhidapi-hidraw0 libhidapi-libusb0
-    ```
-
-4. See the README file in the `lib/pcProxAPI` folder for the files you will need to copy there from the pcProx SDK. More information on the SDK can be found here: https://www.rfideas.com/products/sdk/universal-enroll-sdk
+2. See the README file in the `lib/pcProxAPI` folder for the files you will need to copy there from the pcProx SDK. More information on the SDK can be found here: https://www.rfideas.com/products/sdk/universal-enroll-sdk
 
 ### Running the app
 
